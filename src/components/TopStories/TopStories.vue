@@ -3,9 +3,9 @@
     <div class="splitter-columns">
       <MostViewedColumn/>
       <div class="splitter-rows">
-        <RowAd/>
+        <AdRow/>
         <Headlines/>
-        <RowAd/>
+        <AdRow/>
       </div>
     </div>
   </div>
@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
     import Headlines from './Headlines/Headlines.vue';
-    import RowAd from './RowAd/RowAd.vue';
+    import AdRow from './AdRow/AdRow.vue';
     import MostViewedColumn from './MostViewedColumn/MostViewedColumn.vue';
 </script>
 

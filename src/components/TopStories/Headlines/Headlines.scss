@@ -1,3 +1,53 @@
 .headlines{
-    background-color: white;
+    display: grid;
+    grid-template-rows: 314px 1fr;
+    gap: 15px;
+
+    .main-headline{
+        background-color: white;
+        padding: 12px 12px 12px 27px;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 15px;
+
+        .main-headline-info{
+            width: 311px;
+            display: grid;
+            grid-template-rows: 22px auto 1fr;
+            gap: 15px;
+            text-align: end;
+
+            h1{ 
+                width: 100%;
+                border: 2px solid black;
+            }
+            h3{ 
+                width: 100%;
+                justify-items: end;
+                border: 2px solid black;
+            }
+            p { 
+                width: 100%;
+                justify-items: end;
+                border: 2px solid black;
+            }
+        }
+
+        img{
+            // makinging sure too long or too 
+            // wide images wont disrupt te ui
+            height: 100%;
+            max-height: 290px;
+            max-width: 100%;
+            min-width: 550px;
+            object-fit: cover;
+        }
+    }
+
+    .headlines-card-list{
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 15px;
+    }
 }
+

@@ -1,3 +1,6 @@
 .most-viewed-column{
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: space-between;
 }
