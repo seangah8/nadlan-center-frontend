@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import Counter from './components/Counter/Counter.vue'
+import TopStories from './components/TopStories/TopStories.vue';
+import './App.scss'
 </script>
 
 <template>
-  <Counter msg="Vite + Vue" />
+  <TopStories/>
 </template>
