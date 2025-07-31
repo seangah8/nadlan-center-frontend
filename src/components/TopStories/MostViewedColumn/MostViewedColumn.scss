@@ -1,6 +1,21 @@
-.most-viewed-column{
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    justify-content: space-between;
+
+@media (min-width: 600px) {
+
+    .most-viewed-column{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .most-viewed-column{
+        display: none;
+    }
+    
 }

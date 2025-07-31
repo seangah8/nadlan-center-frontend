@@ -5,7 +5,7 @@
       <div class="splitter-rows">
         <AdRow/>
         <Headlines/>
-        <AdRow/>
+        <AdRow class="ad-row-end"/>
       </div>
     </div>
   </div>

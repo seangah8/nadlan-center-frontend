@@ -1,34 +1,82 @@
-.news-card{
-    position: relative;
-    background-color: white;
-    width: 282px;
-    height: 302px;
-    padding: 7px;
-    text-align: end;
 
-
-    .upper-part{
+@media (min-width: 600px) {
+    .news-card{
         position: relative;
-        height: 160px;
-        
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        background-color: white;
+        width: 282px;
+        height: 302px;
+        padding: 7px;
+        text-align: end;
+
+
+        .upper-part{
+            position: relative;
+            height: 160px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .tag{
+                background-color: aqua;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+            }
         }
 
-        .tag{
-            background-color: aqua;
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
+        .lower-part{
+            padding: 7px;
+
+            .info{
+                position: absolute;
+                bottom: 7px;
+                right: 7px;
+            }
+
         }
-    }
 
-    .info{
-        position: absolute;
-        bottom: 7px;
-        right: 7px;
-    }
 
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    .news-card{
+        background-color: white;
+        padding: 9px;
+        height: 88px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+
+
+        .upper-part{
+            position: relative;
+
+            img{
+                width: 161px;
+                height: 100%;
+            }
+
+            .tag{
+                background-color: aqua;
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+
+        }
+
+        .lower-part{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: end;
+        }
+
+    }
 }

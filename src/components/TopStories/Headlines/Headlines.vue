@@ -5,9 +5,12 @@
       <div class="main-headline-info">
         <p>שון גאח | 11:00</p>
         <h1>היה פיצוץ</h1>
-        <h3>שלום לכל מי שקורא!</h3>
+        <h3>שלום לכל מי שקורא!לום לכל מי שקורא!</h3>
+      </div> 
+      <div class="main-headline-left">
+        <img alt="main-headline-image" src="https://static.vecteezy.com/system/resources/thumbnails/004/216/831/small_2x/3d-world-news-background-loop-free-video.jpg"/>
+        <p class="tag">פוליטיקה</p>
       </div>
-      <img alt="main-headline-image" src="https://static.vecteezy.com/system/resources/thumbnails/004/216/831/small_2x/3d-world-news-background-loop-free-video.jpg"/>
     </div>
 
     <div class="headlines-card-list">
