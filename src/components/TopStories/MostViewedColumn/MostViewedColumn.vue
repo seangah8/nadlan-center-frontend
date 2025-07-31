@@ -1,15 +1,15 @@
 <template>
   <div class="most-viewed-column">
-    <h2>החדשות הנצפות ביותר</h2>
-    <NewsCard/>
-    <NewsCard/>
+    <h2>הכתבות הנצפות ביותר:</h2>
+    <StoryCard/>
+    <StoryCard/>
     <AdCard/>
-    <NewsCard/>
+    <StoryCard/>
   </div>
 </template>
 
 <script setup lang="ts">
-  import NewsCard from '../../NewsCard/NewsCard.vue';
+  import StoryCard from '../../StoryCard/StoryCard.vue';
   import AdCard from '../AdCard/AdCard.vue';
 </script>
 

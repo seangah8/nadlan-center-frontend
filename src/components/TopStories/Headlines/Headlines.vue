@@ -14,7 +14,7 @@
     </div>
 
     <div class="headlines-card-list">
-      <NewsCard v-for="card in newsCards"
+      <StoryCard v-for="card in storiesCards"
       :key="card.id"/>
     </div>
     
@@ -22,14 +22,14 @@
 </template>
 
 <script setup lang="ts">
-  import NewsCard from '../../NewsCard/NewsCard.vue';
+  import StoryCard from '../../StoryCard/StoryCard.vue';
 
 
-  interface NewsCardModel {
+  interface StoriesCardModel {
   id: number
 }
 
-const newsCards: NewsCardModel[] = 
+const storiesCards: StoriesCardModel[] = 
   [{id: 1}, {id: 2},{id: 3},{id: 4},{id: 5},{id: 6}]
 </script>
 

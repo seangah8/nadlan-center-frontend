@@ -1,7 +1,7 @@
 <template>
-  <div class="news-card">
+  <div class="stories-card">
     <div class="upper-part">
-        <img alt="news-card-image" src="https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2022/02/breaking-news-1-1644541351.jpg"/>
+        <img alt="stories-card-image" src="https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2022/02/breaking-news-1-1644541351.jpg"/>
         <p class="tag">פוליטיקה</p>
     </div>
     <div class="lower-part">
@@ -11,4 +11,4 @@
   </div>
 </template>
 
-<style scoped lang="scss" src="./NewsCard.scss"></style>
+<style scoped lang="scss" src="./StoryCard.scss"></style>
