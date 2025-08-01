@@ -6,10 +6,11 @@
         justify-content: center;
 
         .splitter-columns{
+            position: relative;
             width: 1200px;
             height: 1437px;
             display: grid;
-            grid-template-columns: 292px 876px;
+            grid-template-columns: 282px 876px;
             justify-content: space-between;
 
             
@@ -18,7 +19,18 @@
                 grid-template-rows: 1fr 978px 1fr;
                 gap: 15px;
             }
+
+            .vertical-line{
+                position: absolute;
+                left: 302px;
+                width: 1px;             
+                height: 100%;          
+                background-color: #5806C7; 
+                opacity: 42%;
+            }
         }
+
+
     }
 
 }
@@ -34,6 +46,10 @@
         }
 
         .ad-row-end{
+            display: none;
+        }
+
+        .vertical-line{
             display: none;
         }
     }
