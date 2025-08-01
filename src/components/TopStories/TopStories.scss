@@ -4,6 +4,7 @@
     .top-stories{
         display: flex;
         justify-content: center;
+        margin-top: 100px;
 
         .splitter-columns{
             position: relative;
@@ -38,11 +39,15 @@
 @media (max-width: 600px) {
     
     .top-stories{
+        margin-top: 24px;
+
 
         .splitter-rows{
             display: flex;
             flex-direction: column;
+            justify-self: center;
             gap: 10px;
+            width: 416px;
         }
 
         .ad-row-end{
