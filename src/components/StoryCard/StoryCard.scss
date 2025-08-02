@@ -20,16 +20,28 @@
             }
 
             .tag{
+                position: relative;
                 display: grid;
                 align-items: center;
                 justify-items: center;
                 width: 117px;
                 height: 24px;
-                background-color: aqua;
                 position: absolute;
                 bottom: 0px;
                 right: 0px;
                 font-size: 0.75rem;
+                z-index: 1;
+
+                .svg-tag-desktop{
+                    position: absolute;
+                    bottom: -3px;
+                    right: 0px;
+                    z-index: -1;
+                }
+
+                .svg-tag-mobile{
+                    display: none;
+                }
 
             }
         }
@@ -75,16 +87,28 @@
             }
 
             .tag{
+                position: relative;
                 display: grid;
                 align-items: center;
                 justify-items: center;
                 width: 85px;
                 height: 20px;
-                background-color: aqua;
                 position: absolute;
                 right: 0px;
                 bottom: 0px;
                 font-size: 0.55rem;
+                z-index: 1;
+
+                .svg-tag-mobile{
+                    position: absolute;
+                    bottom: -3px;
+                    right: 0px;
+                    z-index: -1;
+                }
+
+                .svg-tag-desktop{
+                    display: none;
+                }
             }
 
         }

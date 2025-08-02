@@ -1,0 +1,34 @@
+
+@media (min-width: 600px) {
+
+    .story-sections{
+        display: flex;
+        justify-content: center;
+        margin-top: 195px;
+
+        .sections{
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    .story-sections{
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+
+        .sections{
+            width: 416px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

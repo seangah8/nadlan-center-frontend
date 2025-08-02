@@ -5,7 +5,7 @@ export const svgService = {
 
 
 
-function getSvg(name: string): string {
+function getSvg(name: string, color: string = 'white', width: number = 10, height: number = 10): string {
   switch (name) {
     case 'search':
       return `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.0002 19.0002L14.6572 14.6572M14.6572 14.6572C15.4001 13.9143 15.9894 13.0324 16.3914 12.0618C16.7935 11.0911 17.0004 10.0508 17.0004 9.00021C17.0004 7.9496 16.7935 6.90929 16.3914 5.93866C15.9894 4.96803 15.4001 4.08609 14.6572 3.34321C13.9143 2.60032 13.0324 2.01103 12.0618 1.60898C11.0911 1.20693 10.0508 1 9.00021 1C7.9496 1 6.90929 1.20693 5.93866 1.60898C4.96803 2.01103 4.08609 2.60032 3.34321 3.34321C1.84288 4.84354 1 6.87842 1 9.00021C1 11.122 1.84288 13.1569 3.34321 14.6572C4.84354 16.1575 6.87842 17.0004 9.00021 17.0004C11.122 17.0004 13.1569 16.1575 14.6572 14.6572Z" stroke="#F15723" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
@@ -32,6 +32,22 @@ function getSvg(name: string): string {
         <rect x="10" y="15" width="10" height="3" transform="rotate(-180 10 15)" fill="white"/>
         <rect x="16" y="9" width="16" height="3" transform="rotate(-180 16 9)" fill="#F15723"/>
         <rect x="22" y="3" width="22" height="3" transform="rotate(-180 22 3)" fill="white"/>
+        </svg>`
+
+    case 'nadlan-colored-logo':
+      return `<svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.3765 3.36841L12.6817 10.1161V3.36841L0 13.1069V48L12.6617 35.0716L25.3866 47.6388H43.6429V3.36841H19.3798H19.3765ZM31.9884 35.0142H12.685V14.8723H31.9884V35.0142Z" fill="${color}"/>
+        <path d="M22.7337 0L16.0388 6.74773V0L3.35718 9.73847V44.6316L16.0189 31.7032L28.7438 44.2704H47V0H22.737H22.7337ZM35.3455 31.6458H16.0422V11.5039H35.3455V31.6458Z" fill="#404040"/>
+        </svg>`
+
+    case 'tag':
+      return `<svg width="${width}" height="${height}" viewBox="0 0 85 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.63248 4.35417L7.62821 0L85 0V19H0V8.19247L3.63248 4.35417Z" fill="${color}"/>
+        </svg>`
+
+    case 'small-tag':
+      return `<svg width="${width}" height="${height}" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 5.5L10.5 0H34V24H0V10.5L5 5.5Z" fill="${color}"/>
         </svg>`
     
       default:

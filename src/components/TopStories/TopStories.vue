@@ -5,11 +5,11 @@
     import AdRow from './AdRow/AdRow.vue';
     import MostViewedColumn from './MostViewedColumn/MostViewedColumn.vue';
     import { ref } from 'vue';
-    import { utilService } from '../../services/util.service';
+    import { StoryService } from '../../services/story.service';
     import type { StoryModel } from '../../models/StoryModel';
 
-    const headlines = ref<StoryModel[]>(utilService.getRandomStories(7))
-    const mostViewed =  ref<StoryModel[]>(utilService.getRandomStories(3))
+    const headlines = ref<StoryModel[]>(StoryService.getRandomStories(7))
+    const mostViewed =  ref<StoryModel[]>(StoryService.getRandomStories(3))
 </script>
 
 <template>

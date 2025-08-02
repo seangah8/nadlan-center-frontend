@@ -13,7 +13,7 @@ const storiesImageUrls : string[] = [
     'https://assets.everspringpartners.com/fe/06/f23661be455e97d009c6ae418995/real-estate-finance.jpg',
 ]
 
-const storiesCategories : {name: string, color: string, textColor: string}[] = [
+export const storiesCategories : {name: string, color: string, textColor: string}[] = [
     {name: 'נדל”ן למגורים', color: '#E2B00D', textColor: 'black'},
     {name:'התחדשות עירונית', color: '#55EBB1', textColor: 'black'},
     {name:'נדל”ן מניב והשקעות', color: '#21C8FC', textColor: 'black'},

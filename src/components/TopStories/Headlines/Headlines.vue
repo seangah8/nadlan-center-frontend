@@ -3,6 +3,7 @@
 <script setup lang="ts">
   import StoryCard from '../../StoryCard/StoryCard.vue';
   import type { StoryModel } from '../../../models/StoryModel';
+  import { svgService } from '../../../services/svg.service';
 
   const props = defineProps<{
     headlines: StoryModel[]
@@ -31,10 +32,12 @@
       </div> 
       <div class="main-headline-right">
         <img alt="main-headline-image" :src="mainHeadline.imageUrl"/>
-        <p class="tag" :style="{
-          backgroundColor: mainHeadline.category.color,
-          color: mainHeadline.category.textColor
-        }">{{ mainHeadline.category.name }}</p>
+        <div class="tag" :style="{color: mainHeadline.category.textColor
+        }">
+          <div class="svg-tag" v-html="svgService.getSvg
+            ('tag', mainHeadline.category.color, 166, 37)"></div>
+          <p>{{ mainHeadline.category.name }}</p>
+      </div>
       </div>
     </div>
 
