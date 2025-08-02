@@ -1,0 +1,230 @@
+
+
+@media (min-width: 600px) {
+
+    .tv-backgound{
+        margin-top: 195px;
+        height: 876px;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        background-color: #0B0119;
+
+        .tv-section{
+            width: 1250px;
+            height: 652px;
+
+            .context{
+                margin-top: 35px;
+                height: 572px;
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+
+                .left-side{
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+      
+                .right-side{
+                    background-color: #130822;
+                    padding: 10px;
+
+                    .top-area{
+                        position: relative;
+                        height: 343px;
+                        width: 100%;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            opacity: 60%;
+                        }
+
+                        .tag{
+                            width: 117px;
+                            height: 24px;
+                            position: absolute;
+                            bottom: 0px;
+                            right: 0px;
+                            z-index: 1;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .svg-tag{
+                                position: absolute;
+                                bottom: -3px;
+                                right: -5px;
+                                z-index: -1;
+                            }
+
+                            p{
+                                position: relative;
+                                left: 5px;
+                                color: white;
+                                font-size: 0.7rem;
+                            }
+                        }
+
+                        .play-logo{
+                            position: absolute;
+                            top: calc(50% - 41px);
+                            left: calc(50% - 41px);
+                        }
+                    }
+
+                    .bottom-area{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: end;
+
+                        .info{
+                            display: flex;
+                            justify-content: end;
+                            gap: 5px;
+                            color: #a3a3a3;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                        }
+
+                        h1{
+                            color: white;
+                            font-size: 1.8rem;
+                            font-weight: 100;
+                            line-height: 1;
+                        }
+
+                        .description{
+                            color: white;
+                            padding-top: 5px;
+                            font-size: 0.95rem;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .tv-backgound{
+        margin-top: 65px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+        background-color: #0B0119;
+        display: flex;
+        justify-content: center;
+
+        .tv-section{
+            width: 416px;
+            display: flex;
+            flex-direction: column;
+
+            .context{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 10px;
+
+                .right-side{
+                    background-color: #130822;
+                    padding: 10px;
+                    height: 425px;
+
+                    .top-area{
+                        position: relative;
+                        width: 100%;
+
+                        img{
+                            width: 100%;
+                            height: 250px;
+                            object-fit: cover;
+                            opacity: 60%;
+                        }
+
+                        .tag{
+                            width: 166px;
+                            height: 35px;
+                            position: absolute;
+                            bottom: 3px;
+                            right: 0px;
+                            z-index: 1;
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .svg-tag{
+                                position: absolute;
+                                bottom: -3px;
+                                right: -5px;
+                                z-index: -1;
+                            }
+
+                            p{
+                                position: relative;
+                                left: 3px;
+                                color: white;
+                                font-size: 0.7rem;
+                            }
+                        }
+
+                        .play-logo{
+                            position: absolute;
+                            top: calc(50% - 27px);
+                            left: calc(50% - 27px);
+                        }
+                    }
+
+                    .bottom-area{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: end;
+
+                        > :nth-child(1) {
+                            order: 3;
+                        }
+
+                        .info{
+                            display: flex;
+                            justify-content: end;
+                            gap: 5px;
+                            color: #a3a3a3;
+                            padding-top: 15px;
+                            font-size: 0.7rem;
+                        }
+
+                        h1{
+                            color: white;
+                            padding-top: 8px;
+                            font-size: 1.2rem;
+                            font-weight: 100;
+                            line-height: 1;
+                        }
+
+                        .description{
+                            color: white;
+                            padding-top: 5px;
+                            font-size: 0.8rem;
+                            line-height: 1.7;
+                        }
+                    }
+                }
+
+                .left-side{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}

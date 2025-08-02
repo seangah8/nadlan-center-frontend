@@ -17,7 +17,7 @@
 
 <template>
   <!-- navigation desktop -->
-  <div class="navigation">
+  <div class="navigation-desktop">
     <div class="navigation-area">
         <div class="navigation-top">
 

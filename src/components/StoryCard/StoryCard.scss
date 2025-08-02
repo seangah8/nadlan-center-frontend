@@ -32,15 +32,11 @@
                 font-size: 0.75rem;
                 z-index: 1;
 
-                .svg-tag-desktop{
+                .svg-tag{
                     position: absolute;
                     bottom: -3px;
                     right: 0px;
                     z-index: -1;
-                }
-
-                .svg-tag-mobile{
-                    display: none;
                 }
 
             }
@@ -99,15 +95,11 @@
                 font-size: 0.55rem;
                 z-index: 1;
 
-                .svg-tag-mobile{
+                .svg-tag{
                     position: absolute;
                     bottom: -3px;
                     right: 0px;
                     z-index: -1;
-                }
-
-                .svg-tag-desktop{
-                    display: none;
                 }
             }
 

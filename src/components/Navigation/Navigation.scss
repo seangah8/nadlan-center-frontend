@@ -5,10 +5,14 @@
         display: none;
     }
 
-    .navigation{
+    .navigation-desktop{
+        position: sticky;
+        top: 0px;
+        z-index: 2;
         height: 114px;
         display: flex;
         background-color: white;
+        box-shadow: 0px 4px 50px #5606c71f;
 
         .logo-area{
             display: grid;
@@ -130,11 +134,14 @@
 
 @media (max-width: 600px) {
 
-    .navigation{
+    .navigation-desktop{
         display: none;
     }
 
     .navigation-mobile{
+        position: sticky;
+        top: 0px;
+        z-index: 2;
         height: 77px;
         width: calc(100% - 25px); // for padding
         background-color: #5806C7;

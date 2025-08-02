@@ -502,3 +502,6 @@ export const realEstateStoriesData: StoryModel[] = [
     date: '04.12'
   },
 ];
+
+
+

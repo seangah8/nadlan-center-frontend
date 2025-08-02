@@ -1,12 +1,18 @@
 <style scoped lang="scss" src="./StoryCard.scss"></style>
 
 <script setup lang="ts">
+  import { computed } from 'vue'
   import type { StoryModel } from '../../models/StoryModel';
   import { svgService } from '../../services/svg.service';
 
   const props = defineProps<{
+    onMobile: boolean
     story: StoryModel
   }>()
+
+  const tagSize = computed(() => 
+        props.onMobile ? {w: 85, h: 20} : {w: 120, h: 27}
+  )
 
 </script>
 
@@ -18,10 +24,8 @@
         <div class="tag" :style="{ 
           color: props.story.category.textColor
           }">
-            <div class="svg-tag-desktop" v-html="svgService.getSvg
-              ('tag',  props.story.category.color, 120, 27)"/>
-            <div class="svg-tag-mobile" v-html="svgService.getSvg
-              ('tag',  props.story.category.color, 85, 20)"/>
+            <div class="svg-tag" v-html="svgService.getSvg
+              ('tag',  props.story.category.color, tagSize.w, tagSize.h)"/>
             <p>{{props.story.category.name}}</p>
         </div>
     </div>

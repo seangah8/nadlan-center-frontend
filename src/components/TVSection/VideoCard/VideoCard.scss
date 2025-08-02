@@ -1,0 +1,166 @@
+
+@media (min-width: 600px) {
+
+    .video-card{
+        width: calc(100% - 20px);
+        height: 163px;
+        padding: 10px;
+        background-color: #130822;
+        display: flex;
+        justify-content: space-between;
+
+        .left-area{
+            margin-left: 40px;
+            width: 255px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            gap: 10px;
+            text-align: end;
+
+            h3{
+                color: white;
+                font-size: 0.85rem;
+                line-height: 1.5;
+            }
+
+            .info{
+                display: flex;
+                justify-content: end;
+                gap: 3px;
+                color: #a3a3a3;
+                font-size: 0.8rem;
+            }
+        }
+
+        .right-area{
+            position: relative;
+            width: 278px;
+            height: 100%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 60%;
+            }
+
+            .tag{
+                width: 117px;
+                height: 24px;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                z-index: 1;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .svg-tag{
+                    position: absolute;
+                    bottom: -3px;
+                    right: -5px;
+                    z-index: -1;
+                }
+
+                p{
+                    position: relative;
+                    left: 5px;
+                    color: white;
+                    font-size: 0.7rem;
+                }
+            }
+
+            .play-logo{
+                position: absolute;
+                top: calc(50% - 27px);
+                left: calc(50% - 27px);
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .video-card{
+        width: calc(100% - 20px);
+        height: 128px;
+        padding: 10px;
+        background-color: #130822;
+        display: flex;
+        justify-content: space-between;
+
+        .left-area{
+            margin-left: 25px;
+            width: 172px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            text-align: end;
+
+            h3{
+                margin-top: 10px;
+                color: white;
+                font-size: 0.80rem;
+                line-height: 1.5;
+            }
+
+            .info{
+                display: flex;
+                justify-content: end;
+                gap: 3px;
+                color: #a3a3a3;
+                font-size: 0.7rem;
+            }
+        }
+
+        .right-area{
+            position: relative;
+            width: 187px;
+            height: 100%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 60%;
+            }
+
+            .tag{
+                width: 117px;
+                height: 24px;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                z-index: 1;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .svg-tag{
+                    position: absolute;
+                    bottom: -3px;
+                    right: -5px;
+                    z-index: -1;
+                }
+
+                p{
+                    position: relative;
+                    left: 5px;
+                    color: white;
+                    font-size: 0.7rem;
+                }
+            }
+
+            .play-logo{
+                position: absolute;
+                top: calc(50% - 18px);
+                left: calc(50% - 18px);
+            }
+        }
+    }
+}

@@ -3,6 +3,11 @@
 <script setup lang="ts">
     import Section from './Section/Section.vue';
     import { storiesCategories } from '../../database/stories.data';
+
+    const props = defineProps<{
+        onMobile: boolean
+    }>()
+
 </script>
 
 <template>
@@ -11,6 +16,7 @@
             <Section
                 v-for="(category, index) in storiesCategories"
                 :key="index"
+                :onMobile="props.onMobile"
                 :category="category"
                 :index="index"
             />

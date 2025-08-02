@@ -6,6 +6,7 @@
   import { svgService } from '../../../services/svg.service';
 
   const props = defineProps<{
+    onMobile: boolean
     headlines: StoryModel[]
   }>()
 
@@ -43,6 +44,7 @@
 
     <div class="headlines-card-list">
       <StoryCard v-for="card in otherHeadlines"
+      :onMobile="onMobile"
       :key="card.id"
       :story="card"/>
     </div>

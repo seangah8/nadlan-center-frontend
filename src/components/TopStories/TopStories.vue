@@ -8,6 +8,10 @@
     import { StoryService } from '../../services/story.service';
     import type { StoryModel } from '../../models/StoryModel';
 
+    const props = defineProps<{
+        onMobile: boolean
+    }>()
+
     const headlines = ref<StoryModel[]>(StoryService.getRandomStories(7))
     const mostViewed =  ref<StoryModel[]>(StoryService.getRandomStories(3))
 </script>
@@ -18,7 +22,7 @@
       <MostViewedColumn :stories="mostViewed"/>
       <div class="splitter-rows">
         <AdRow/>
-        <Headlines :headlines="headlines"/>
+        <Headlines :headlines="headlines" :onMobile="onMobile"/>
         <AdRow class="ad-row-end"/>
       </div>
       <div class="vertical-line"></div>
