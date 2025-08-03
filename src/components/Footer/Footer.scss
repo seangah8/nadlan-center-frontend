@@ -1,0 +1,140 @@
+
+.footer-layout{
+    position: relative;
+    margin-top: 320px;
+    height: 852px;
+    background-color: #5806C7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top-area{
+        position: relative;
+        top: -30px;
+        width: 1178px;
+        height: 121px;
+        background-color: #FBF8FF;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 40px 0px 40px;
+
+        .icons{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .icon{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                width: 32px;
+                height: 32px;
+                background-color: #5806C7;
+                border-radius: 50%;
+            }
+
+            i{
+                color: white;
+            }
+        }
+
+        .nadav-logo{
+            position: relative;
+            top: -8px;
+        }
+
+        
+    }
+
+    .nav-area{
+        margin-top: 30px;
+        width: 1258px;
+        height: 520px;
+        display: flex;
+        justify-content: space-between;
+
+        .nav-lists{
+            height: 100%;
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+
+            h1{
+                font-weight: 100;
+                font-size: 1.9rem;
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .read-more-layout{
+                padding-top: 25px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                gap: 15px;
+                
+                .read-more{
+                    color: #F15723;
+                }
+
+                i{
+                    color: #F15723;
+                    font-size: 0.6rem;
+                }
+
+            }
+
+
+        }
+
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0px;
+        height: 105px;
+        width: 100%;
+        background-color: #130822;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // gap: 80px;
+
+        .footer-context{
+            width: 1258px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            font-size: 1rem;
+
+            .wizzo-footer{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .eden-jarmon-footer{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-layout{
+        display: none;
+    }
+}
