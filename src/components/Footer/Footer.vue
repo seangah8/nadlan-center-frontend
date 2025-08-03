@@ -12,6 +12,7 @@
 <template>
     <div class="footer-layout">
 
+        <!-- top area -->
         <div class="top-area">
             <div class="icons">
                 <div class="icon" v-for="icon in iconsNames">
@@ -21,6 +22,7 @@
             <div class="nadav-logo" v-html="svgService.getSvg('nadlan-full-logo')"></div>
         </div>
 
+        <!-- middle area -->
         <div class="nav-area">
             <div class="nav-lists" v-for="list in footerNavLinks">
                 <h1>{{list.title}}</h1>
@@ -32,6 +34,7 @@
             </div>
         </div>
 
+        <!-- bottom area -->
         <footer>
             <div class="footer-context">
                 <p class="rights-statement">© כל הזכויות שמורות למרכז הנדל"ן ישראל - סקאלה ד.מ בע"מ Scala Group D.M</p>

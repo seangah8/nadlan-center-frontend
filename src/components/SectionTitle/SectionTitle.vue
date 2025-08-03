@@ -28,6 +28,7 @@
 <template>
     <div class="section-title">
         
+        <!-- tag -->
         <div class="tag" :style="{color: props.tagTextColor}">
             <div class="svg-tag" v-html="svgService.getSvg
                 (tagType.name, props.tagColor, tagType.w, tagType.h)"/>
@@ -35,15 +36,15 @@
             <p v-if="!props.onMobile">לעמוד המדור</p>
         </div>
 
+        <!-- line -->
         <div class="line" :style="{backgroundColor: props.lineColor}"/>
         
+        <!-- title -->
         <div class="category-title">
             <h1 :style="{color: props.titleColor}">{{props.title}}</h1>
             <div class="logo" v-html="svgService.getSvg
                 ('nadlan-colored-logo', props.logoBackColor, 0, 0 , props.logoFrontColor)"/>
         </div>
-
-
 
     </div>
 </template>

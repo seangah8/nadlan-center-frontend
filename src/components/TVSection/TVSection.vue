@@ -25,6 +25,8 @@
 <template>
     <div class="tv-backgound">
         <div class="tv-section">
+
+            <!-- title -->
             <SectionTitle style="height: 45px;"
                 :onMobile="onMobile"
                 logoBackColor="white"
@@ -35,7 +37,11 @@
                 tagColor="#f20286"
                 tagTextColor="white"
             />
+
+            <!-- main part -->
             <div class="context">
+
+                <!-- video list -->
                 <div class="left-side">
                     <VideoCard v-for="vid in sideVideos" 
                         :onMobile="props.onMobile"
@@ -43,7 +49,11 @@
                         :video="vid"
                     />
                 </div>
+
+                <!-- main video -->
                 <div class="right-side">
+
+                    <!-- image area -->
                     <div class="top-area">
                         <img alt="video-image" :src="mainVideo.imageUrl"/>
                         <div class="tag">
@@ -55,6 +65,7 @@
                             ('play-logo', '', playLogoSize, playLogoSize)"/>
                     </div>
 
+                    <!-- text area -->
                     <div class="bottom-area">
                         <p class="info">
                             <span>{{mainVideo.autor}}</span> | 
@@ -63,6 +74,7 @@
                         <h1>{{mainVideo.title}}</h1>
                         <p class="description">{{mainVideo.description}}</p>
                     </div>
+                    
                 </div>
             </div>
         </div>

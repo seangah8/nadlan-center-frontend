@@ -21,7 +21,10 @@
 <template>
   <div class="headlines">
 
+    <!-- main headline -->
     <div class="main-headline">
+
+      <!-- image area -->
       <div class="main-headline-left">
         <p>
           <span>{{mainHeadline.autor}}</span> | 
@@ -31,17 +34,20 @@
         <h3>{{ mainHeadline.description }}</h3>
         <div class="fade"></div>
       </div> 
+
+      <!-- text area -->
       <div class="main-headline-right">
         <img alt="main-headline-image" :src="mainHeadline.imageUrl"/>
-        <div class="tag" :style="{color: mainHeadline.category.textColor
-        }">
+        <div class="tag" :style="{color: mainHeadline.category.textColor}">
           <div class="svg-tag" v-html="svgService.getSvg
             ('tag', mainHeadline.category.color, 166, 37)"></div>
           <p>{{ mainHeadline.category.name }}</p>
+        </div>
       </div>
-      </div>
+
     </div>
 
+    <!-- bottom card list -->
     <div class="headlines-card-list">
       <StoryCard v-for="card in otherHeadlines"
       :onMobile="onMobile"

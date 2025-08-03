@@ -21,8 +21,9 @@
   <!-- navigation desktop -->
   <div class="navigation-desktop">
     <div class="navigation-area">
-        <div class="navigation-top">
 
+        <!-- top part -->
+        <div class="navigation-top">
             <div class="icons">
                 <div class="icon" v-for="icon in iconsNames">
                     <i :class="`fa-brands fa-${icon}`"></i>
@@ -34,8 +35,9 @@
                     <a :href="`http://localhost:5173/${text}`">{{ text }}</a>
                 </div>
             </div>
-
         </div>
+
+        <!-- bottom part -->
         <div class="navigation-bottom">
             <div class="search">
                 <input type="text" placeholder="חיפוש"/>
@@ -48,6 +50,8 @@
             </div>
         </div>
     </div>
+
+    <!-- right part -->
     <div class="logo-area">
         <img alt="nadlan-center-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9wR4Ku5oMujv_MTuvQeP8OgtgHr14gzfNw&s"/>
     </div>

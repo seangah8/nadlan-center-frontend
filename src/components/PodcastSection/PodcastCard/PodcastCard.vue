@@ -11,10 +11,14 @@
 
 <template>
     <div class="podcast-card">
+
+        <!-- icons -->
         <div class="icons-area">
             <i class="fa-solid fa-headphones"></i>
             <i class="fa-solid fa-play"></i>
         </div>
+
+        <!-- middle area -->
         <div class="text-area">
             <div class="main-text">
                 <h1>{{ podcast.host }}</h1>
@@ -24,6 +28,7 @@
             <p class="info">פודקסטים  |  {{ podcast.date }}  |  {{ podcast.autor }}</p>
         </div>
 
+        <!-- right area -->
         <img alt="podcast-image" :src="podcast.imageUrl"></img>
             
     </div>

@@ -17,6 +17,8 @@
 
 <template>
     <div class="video-card">
+
+        <!-- text area -->
         <div class="left-area">
             <h3>{{props.video.title}}</h3>
             <p class="info">
@@ -25,6 +27,7 @@
             </p>
         </div>
 
+        <!-- image area -->
         <div class="right-area">
             <img alt="video-image" :src="props.video.imageUrl"/>
             <div class="tag">
@@ -35,5 +38,6 @@
             <div class="play-logo" v-html="svgService.getSvg
                 ('play-logo', '', playLogoSize, playLogoSize)"/>
         </div>
+        
     </div>
 </template>

@@ -24,6 +24,8 @@ import SectionTitle from '../../SectionTitle/SectionTitle.vue';
 
 <template>
     <div class="section">
+
+      <!-- title -->
       <SectionTitle 
         :onMobile="props.onMobile"
         :logoBackColor="props.category.color"
@@ -34,12 +36,17 @@ import SectionTitle from '../../SectionTitle/SectionTitle.vue';
         :tagColor="props.category.color"
         :tagTextColor="props.category.textColor"
       />
+
+      <!-- card list -->
       <div class="card-list">
           <StoryCard v-for="story in stories"
           :onMobile="props.onMobile"
           :key="story.id"
           :story="story"/>
       </div>
+
+      <!-- ad -->
       <AdRow class="ad-part" v-if="showAdAfter" style="margin-top: 15px;"/>
+
     </div>
 </template>

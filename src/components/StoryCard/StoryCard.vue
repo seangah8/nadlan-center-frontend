@@ -19,6 +19,8 @@
 
 <template>
   <div class="story-card" v-if="props.story">
+
+    <!-- image area -->
     <div class="upper-part">
         <img alt="stories-card-image" :src="props.story.imageUrl"/>
         <div class="tag" :style="{ 
@@ -29,6 +31,8 @@
             <p>{{props.story.category.name}}</p>
         </div>
     </div>
+
+    <!-- text area -->
     <div class="lower-part">
       <h3 class="title">{{props.story.title}}</h3>
         <p class="info">
@@ -36,5 +40,6 @@
           <span>{{props.story.date}}</span>
         </p>
     </div>
+    
   </div>
 </template>

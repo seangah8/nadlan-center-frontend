@@ -14,17 +14,23 @@
 
     const headlines = ref<StoryModel[]>(StoryService.getRandomStories(7))
     const mostViewed =  ref<StoryModel[]>(StoryService.getRandomStories(3))
+
 </script>
 
 <template>
   <div class="top-stories">
     <div class="splitter-columns">
+
+      <!-- left colume -->
       <MostViewedColumn :stories="mostViewed"/>
+
+      <!-- right main area -->
       <div class="splitter-rows">
         <AdRow/>
         <Headlines :headlines="headlines" :onMobile="props.onMobile"/>
         <AdRow class="ad-row-end"/>
       </div>
+
       <div class="vertical-line"></div>
     </div>
   </div>
