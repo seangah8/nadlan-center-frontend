@@ -1,5 +1,18 @@
-# Vue 3 + TypeScript + Vite
+# Wizzo Home Assignment
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a submission for the Vue.ts and SCSS home assignment as part of the job application process.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Features
+- Built using Vue 3
+- Responsive design: Desktop + Mobile
+- Reusable components for articles
+- Article data is stored in the state
+- Pixel-perfect implementation based on the provided Figma
+
+## Setup
+
+To run locally:
+
+```bash
+npm install
+npm run dev
