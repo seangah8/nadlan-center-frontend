@@ -43,5 +43,7 @@
                 ('nadlan-colored-logo', props.logoBackColor, 0, 0 , props.logoFrontColor)"/>
         </div>
 
+
+
     </div>
 </template>

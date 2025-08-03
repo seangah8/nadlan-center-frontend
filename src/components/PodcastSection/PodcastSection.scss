@@ -1,0 +1,28 @@
+
+
+.podcast-layout{
+    margin-top: 195px;
+    display: flex;
+    justify-content: center;
+
+    .podcast-section{
+        width: 1258px;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+
+
+        .podcasts-list{
+            height: 512px;
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            gap:21px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .podcast-layout{
+        display: none;
+    }
+}

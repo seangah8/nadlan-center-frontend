@@ -5,7 +5,7 @@
             width: 100%;
             display: flex;
             align-items: end;
-            justify-content: space-between;
+            gap: 20px;
 
             .tag{
                 position: relative;
@@ -32,33 +32,38 @@
                 }
             }
 
+            .category-title{
+                    position: relative;
+                    display: flex;
+                    gap: 10px;
+
+                    h1{
+                        position: relative;
+                        bottom: -22px;
+                        left: 0px;
+                        font-weight: 100;
+                        font-size: 1.8rem;
+                    }
+
+                    .logo{
+                        position: relative;
+                        bottom: -5px;
+                    }
+            }
+
             .line{
                 position: relative;
                 right: 10px;
                 outline: none;
                 margin: 0px;
                 height: 1px;
-                width: 785px;
+                flex: 1;
             }
 
-            .category-title{
-                position: relative;
-                display: flex;
-                gap: 10px;
 
-                h1{
-                    position: relative;
-                    bottom: -22px;
-                    left: 0px;
-                    font-weight: 100;
-                    font-size: 1.8rem;
-                }
+                
 
-                .logo{
-                    position: relative;
-                    bottom: -5px;
-                }
-            }
+
 
 
     }

@@ -1,6 +1,6 @@
-import type { VideoModel } from '../models/VideoModel'
+import type { PodcastModel } from "../models/PodcastModel"
 
-const videosImageUrls : string[] = [
+const podcastsImageUrls : string[] = [
     'https://coralhomes.com.au/wp-content/uploads/Web-2800x1575px-Milan-29-Ballina-Pavilion-Facade-1-1060x596.jpg',
     'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds',
     'https://www.clvgroup.com/wp-content/uploads/1734370114508_CLV_Group__Real_estate_investing_-scaled.jpg',
@@ -13,8 +13,21 @@ const videosImageUrls : string[] = [
     'https://assets.everspringpartners.com/fe/06/f23661be455e97d009c6ae418995/real-estate-finance.jpg',
 ]
 
-const videosTitles : string[] = [
-  'הושק פרויקט מגורים יוקרתי חדש בלב תל אביב עם נוף לים',
+const podcastsHosts : string[] = [
+  'הושק פרויקטלים',
+  'שכונה חדשה בעירים',
+  'האם ת בירושלרובה?',
+  'מכרז חדש לבניידרך',
+  'התושבים נבורי',
+  'מגדלי מגורים חדניות',
+  'האם כדאי להשריה?',
+  'הפרולה',
+  'תכניתת גן',
+  'עלייה חדה בבארץ',
+]
+
+const podcastsAboutHosts : string[] = [
+    'הושק פרויקט מגורים יוקרתי חדש בלב תל אביב עם נוף לים',
   'שכונה חדשה בדרום הארץ מציעה דירות בנות השגה לזוגות צעירים',
   'האם מחירי הדירות בירושלים צפויים להמשיך לעלות גם בשנה הקרובה?',
   'מכרז חדש לבניית אלפי יחידות דיור באזור השרון יוצא לדרך',
@@ -26,7 +39,7 @@ const videosTitles : string[] = [
   'עלייה חדה בביקוש לדירות להשקעה באזורים מתפתחים בצפון הארץ',
 ]
 
-const videosDescriptions : string[] = [
+const podcastsDescriptions : string[] = [
   'הפרויקט החדש מציע דירות בסטנדרט גבוה, עם מרפסות מרווחות, חניון תת-קרקעי ונגישות לתחבורה ציבורית ומוסדות חינוך.',
   'בעקבות ביקוש גובר, חברות נדל"ן משקיעות בפרויקטים חדשים גם באזורים שבעבר נחשבו לפחות אטרקטיביים להשקעה.',
   'העירייה אישרה תוכנית פינוי-בינוי רחבת היקף, שתכלול מאות יחידות דיור חדשות ותשתיות מודרניות.',
@@ -40,108 +53,121 @@ const videosDescriptions : string[] = [
 ]
 
 
-export const realEstateVideosData: VideoModel[] = [
+export const realEstatePodcastsData: PodcastModel[] = [
     {
     id: 'id1',
-    title: videosTitles[7],
-    description: videosDescriptions[7],
-    imageUrl: videosImageUrls[0],
+    host: podcastsHosts[7],
+    aboutHost: podcastsAboutHosts[8],
+    description: podcastsDescriptions[7],
+    imageUrl: podcastsImageUrls[0],
     autor: 'דנה כהן',
     date: '28.03'
   },
   {
     id: 'id2',
-    title: videosTitles[4],
-    description: videosDescriptions[9],
-    imageUrl: videosImageUrls[6],
+    host: podcastsHosts[4],
+    aboutHost: podcastsAboutHosts[5],
+    description: podcastsDescriptions[9],
+    imageUrl: podcastsImageUrls[6],
     autor: 'גל זיו',
     date: '14.11'
   },
   {
     id: 'id3',
-    title: videosTitles[7],
-    description: videosDescriptions[4],
-    imageUrl: videosImageUrls[1],
+    host: podcastsHosts[7],
+    aboutHost: podcastsAboutHosts[0],
+    description: podcastsDescriptions[4],
+    imageUrl: podcastsImageUrls[1],
     autor: 'תום ברק',
     date: '19.07'
   },
   {
     id: 'id4',
-    title: videosTitles[3],
-    description: videosDescriptions[5],
-    imageUrl: videosImageUrls[8],
+    host: podcastsHosts[3],
+    aboutHost: podcastsAboutHosts[2],
+    description: podcastsDescriptions[5],
+    imageUrl: podcastsImageUrls[8],
     autor: 'נועה ברק',
     date: '10.02'
   },
   {
     id: 'id5',
-    title: videosTitles[5],
-    description: videosDescriptions[6],
-    imageUrl: videosImageUrls[2],
+    host: podcastsHosts[5],
+    aboutHost: podcastsAboutHosts[1],
+    description: podcastsDescriptions[6],
+    imageUrl: podcastsImageUrls[2],
     autor: 'לירון רבינוביץ',
     date: '29.04'
   },
   {
     id: 'id6',
-    title: videosTitles[4],
-    description: videosDescriptions[1],
-    imageUrl: videosImageUrls[0],
+    host: podcastsHosts[4],
+    aboutHost:podcastsAboutHosts[8],
+    description: podcastsDescriptions[1],
+    imageUrl: podcastsImageUrls[0],
     autor: 'אייל ברק',
     date: '26.07'
   },
   {
     id: 'id7',
-    title: videosTitles[7],
-    description: videosDescriptions[8],
-    imageUrl: videosImageUrls[0],
+    host: podcastsHosts[7],
+    aboutHost: podcastsAboutHosts[9],
+    description: podcastsDescriptions[8],
+    imageUrl: podcastsImageUrls[0],
     autor: 'מיכל כהן',
     date: '14.10'
   },
   {
     id: 'id8',
-    title: videosTitles[0],
-    description: videosDescriptions[5],
-    imageUrl: videosImageUrls[5],
+    host: podcastsHosts[0],
+    aboutHost:  podcastsAboutHosts[7],
+    description: podcastsDescriptions[5],
+    imageUrl: podcastsImageUrls[5],
     autor: 'דנה פרידמן',
     date: '30.01'
   },
   {
     id: 'id9',
-    title: videosTitles[2],
-    description: videosDescriptions[2],
-    imageUrl: videosImageUrls[2],
+    host: podcastsHosts[2],
+    aboutHost: podcastsAboutHosts[6],
+    description: podcastsDescriptions[2],
+    imageUrl: podcastsImageUrls[2],
     autor: 'גל שלו',
     date: '09.10'
   },
   {
     id: 'id10',
-    title: videosTitles[2],
-    description: videosDescriptions[9],
-    imageUrl: videosImageUrls[6],
+    host: podcastsHosts[2],
+    aboutHost: podcastsAboutHosts[4],
+    description: podcastsDescriptions[9],
+    imageUrl: podcastsImageUrls[6],
     autor: 'לירון שלו',
     date: '23.01'
   },
   {
     id: 'id11',
-    title: videosTitles[9],
-    description: videosDescriptions[6],
-    imageUrl: videosImageUrls[0],
+    host: podcastsHosts[9],
+    aboutHost: podcastsAboutHosts[2],
+    description: podcastsDescriptions[6],
+    imageUrl: podcastsImageUrls[0],
     autor: 'דנה רבינוביץ',
     date: '03.08'
   },
   {
     id: 'id12',
-    title: videosTitles[0],
-    description: videosDescriptions[5],
-    imageUrl: videosImageUrls[7],
+    host: podcastsHosts[0],
+    aboutHost: podcastsAboutHosts[5],
+    description: podcastsDescriptions[5],
+    imageUrl: podcastsImageUrls[7],
     autor: 'גל ברק',
     date: '15.12'
   },
   {
     id: 'id13',
-    title: videosTitles[4],
-    description: videosDescriptions[4],
-    imageUrl: videosImageUrls[4],
+    host: podcastsHosts[4],
+    aboutHost: podcastsAboutHosts[8],
+    description: podcastsDescriptions[4],
+    imageUrl: podcastsImageUrls[4],
     autor: 'לירון לוי',
     date: '04.12'
   },

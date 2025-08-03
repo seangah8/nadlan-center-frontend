@@ -4,6 +4,7 @@
   import TopStories from './components/TopStories/TopStories.vue';
   import StorySections from './components/StorySections/StorySections.vue';
   import TVSection from './components/TVSection/TVSection.vue'; 
+  import PodcastSection from './components/PodcastSection/PodcastSection.vue';
   import { ref, onMounted, onUnmounted } from 'vue'
 
   // helps avoid creating separate elements for different screen sizes
@@ -19,4 +20,5 @@
   <TopStories :onMobile="onMobile"/>
   <StorySections :onMobile="onMobile"/>
   <TVSection :onMobile="onMobile"/>
+  <PodcastSection/>
 </template>
