@@ -5,7 +5,7 @@ import { ref } from 'vue'
 import { StoryService } from '../../../services/story.service';
 import type { StoryModel } from '../../../models/StoryModel';
 import StoryCard from '../../StoryCard/StoryCard.vue';
-import AdRow from '../../TopStories/AdRow/AdRow.vue';
+import AdRow from '../../AdRow/AdRow.vue';
 import SectionTitle from '../../SectionTitle/SectionTitle.vue';
 
 

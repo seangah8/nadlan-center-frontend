@@ -2,7 +2,7 @@
 
 <script setup lang="ts">
     import Headlines from './Headlines/Headlines.vue';
-    import AdRow from './AdRow/AdRow.vue';
+    import AdRow from '../AdRow/AdRow.vue';
     import MostViewedColumn from './MostViewedColumn/MostViewedColumn.vue';
     import { ref } from 'vue';
     import { StoryService } from '../../services/story.service';
@@ -22,7 +22,7 @@
       <MostViewedColumn :stories="mostViewed"/>
       <div class="splitter-rows">
         <AdRow/>
-        <Headlines :headlines="headlines" :onMobile="onMobile"/>
+        <Headlines :headlines="headlines" :onMobile="props.onMobile"/>
         <AdRow class="ad-row-end"/>
       </div>
       <div class="vertical-line"></div>
