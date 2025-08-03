@@ -46,7 +46,11 @@ import SectionTitle from '../../SectionTitle/SectionTitle.vue';
       </div>
 
       <!-- ad -->
-      <AdRow class="ad-part" v-if="showAdAfter" style="margin-top: 15px;"/>
+      <AdRow v-if="showAdAfter" style="margin-top: 15px;"
+        class="ad-part"
+        imageName="row_ad"
+        :height="235"
+      />
 
     </div>
 </template>

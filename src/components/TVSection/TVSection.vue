@@ -29,8 +29,8 @@
             <!-- title -->
             <SectionTitle style="height: 45px;"
                 :onMobile="onMobile"
-                logoBackColor="white"
-                logoFrontColor="#f20286"
+                :logoBackColor="onMobile ? '#f20286' : 'white'"
+                :logoFrontColor="onMobile ? 'white' : '#f20286'"
                 title="TV נדל״ן"
                 titleColor="white"
                 lineColor="white"
@@ -55,7 +55,9 @@
 
                     <!-- image area -->
                     <div class="top-area">
-                        <img alt="video-image" :src="mainVideo.imageUrl"/>
+                        <div class="overflow-controller">
+                            <img alt="video-image" :src="mainVideo.imageUrl"/>
+                        </div>
                         <div class="tag">
                             <div class="svg-tag" v-html="svgService.getSvg
                             ('tag',  '#f20286', tagSize.w, tagSize.h)"/>

@@ -34,22 +34,22 @@
             }
 
             .category-title{
+                position: relative;
+                display: flex;
+                gap: 10px;
+
+                h1{
                     position: relative;
-                    display: flex;
-                    gap: 10px;
+                    bottom: -22px;
+                    left: 0px;
+                    font-weight: 100;
+                    font-size: 1.8rem;
+                }
 
-                    h1{
-                        position: relative;
-                        bottom: -22px;
-                        left: 0px;
-                        font-weight: 100;
-                        font-size: 1.8rem;
-                    }
-
-                    .logo{
-                        position: relative;
-                        bottom: -5px;
-                    }
+                .logo{
+                    position: relative;
+                    bottom: -10px;
+                }
             }
 
             .line{

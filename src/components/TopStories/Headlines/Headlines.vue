@@ -24,7 +24,7 @@
     <!-- main headline -->
     <div class="main-headline">
 
-      <!-- image area -->
+      <!-- text area -->
       <div class="main-headline-left">
         <p>
           <span>{{mainHeadline.autor}}</span> | 
@@ -35,9 +35,11 @@
         <div class="fade"></div>
       </div> 
 
-      <!-- text area -->
+      <!-- image area -->
       <div class="main-headline-right">
-        <img alt="main-headline-image" :src="mainHeadline.imageUrl"/>
+        <div class="overflow-controller">
+          <img alt="main-headline-image" :src="mainHeadline.imageUrl"/>
+        </div>
         <div class="tag" :style="{color: mainHeadline.category.textColor}">
           <div class="svg-tag" v-html="svgService.getSvg
             ('tag', mainHeadline.category.color, 166, 37)"></div>

@@ -26,9 +26,9 @@
 
       <!-- right main area -->
       <div class="splitter-rows">
-        <AdRow/>
+        <AdRow imageName="row_ad" :height="props.onMobile ? 92 : 199"/>
         <Headlines :headlines="headlines" :onMobile="props.onMobile"/>
-        <AdRow class="ad-row-end"/>
+        <AdRow class="ad-row-end" imageName="row_ad2" :height="199"/>
       </div>
 
       <div class="vertical-line"></div>

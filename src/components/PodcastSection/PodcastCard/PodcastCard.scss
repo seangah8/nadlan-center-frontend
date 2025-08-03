@@ -24,6 +24,7 @@
         justify-content: space-between;
         
         .main-text{
+            width: 325px;
             display: flex;
             flex-direction: column;
 
@@ -50,12 +51,24 @@
         }
     }
 
-    img{
-        width: 160px;
-        height: 100%;
-        object-fit: cover;
+    .overflow-controller{
+        overflow: hidden;
+
+        img{
+            width: 160px;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease-in-out;
+        }
+
     }
 
 
+
+
+}
+
+.podcast-card:hover img {
+    transform: scale(1.05);
 }
 

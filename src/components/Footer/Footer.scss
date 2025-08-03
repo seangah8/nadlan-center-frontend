@@ -20,6 +20,8 @@
         padding: 0px 40px 0px 40px;
 
         .icons{
+            position: relative;
+            bottom: -12px;
             display: flex;
             align-items: center;
             gap: 15px;

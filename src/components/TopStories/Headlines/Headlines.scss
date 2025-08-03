@@ -56,14 +56,20 @@
             .main-headline-right{
                 position: relative;
 
-                img{
-                    // makinging sure too long or too 
-                    // wide images wont disrupt te ui
-                    height: 100%;
-                    max-height: 285px;
-                    width: 501px;
-                    object-fit: cover;
+                .overflow-controller{
+                    overflow: hidden;
+
+                    img{
+                        height: 100%;
+                        max-height: 285px;
+                        width: 501px;
+                        object-fit: cover;
+                        transition: transform 0.5s ease-in-out;
+                    }
+
                 }
+
+
 
                 .tag{
                     position: relative;
@@ -86,8 +92,10 @@
                 }
 
             }
-            
+        }
 
+        .main-headline:hover img{
+            transform: scale(1.05);
         }
 
         .headlines-card-list{
@@ -118,10 +126,16 @@
             .main-headline-right{
                 position: relative;
 
-                img{
+                .overflow-controller{
+                    overflow: hidden;
                     height: 233px;
-                    width: 100%;
-                    object-fit: cover;
+
+                    img{
+                        height: 233px;
+                        width: 100%;
+                        object-fit: cover;
+                        transition: transform 0.5s ease-in-out;
+                    }
                 }
 
                 .tag{
@@ -130,7 +144,7 @@
                     justify-items: center;
                     position: absolute;
                     right: 0px;
-                    bottom: 3px;
+                    bottom: 0px;
                     width: 167px;
                     height: 35px;
                     font-size: 0.8rem;
@@ -150,8 +164,8 @@
                 flex-direction: column;
                 text-align: end;
                 gap: 5px;
-                padding-left: 25px;
-                padding-right: 25px;
+                padding-left: 15px;
+                padding-right: 15px;
 
                 > :nth-child(1) {
                     order: 3;
@@ -183,6 +197,10 @@
                     display: none;
                 }
             }
+        }
+        
+        .main-headline:hover img{
+            transform: scale(1.05);
         }
 
         .headlines-card-list{

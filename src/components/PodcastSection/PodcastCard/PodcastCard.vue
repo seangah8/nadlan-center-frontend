@@ -18,7 +18,7 @@
             <i class="fa-solid fa-play"></i>
         </div>
 
-        <!-- middle area -->
+        <!-- text area -->
         <div class="text-area">
             <div class="main-text">
                 <h1>{{ podcast.host }}</h1>
@@ -28,8 +28,11 @@
             <p class="info">פודקסטים  |  {{ podcast.date }}  |  {{ podcast.autor }}</p>
         </div>
 
-        <!-- right area -->
-        <img alt="podcast-image" :src="podcast.imageUrl"></img>
+        <!-- image area -->
+        <div class="overflow-controller">
+            <img alt="podcast-image" :src="podcast.imageUrl"></img>
+        </div>
+
             
     </div>
 </template>
