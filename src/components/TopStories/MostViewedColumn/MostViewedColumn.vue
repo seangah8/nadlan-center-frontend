@@ -15,9 +15,9 @@
 <template>
   <div class="most-viewed-column">
     <h2>הכתבות הנצפות ביותר</h2>
-    <StoryCard :story="props.stories[0]"/>
-    <StoryCard :story="props.stories[1]"/>
+    <StoryCard :story="props.stories[0]" :onMobile="false"/>
+    <StoryCard :story="props.stories[1]" :onMobile="false"/>
     <AdCard/>
-    <StoryCard :story="props.stories[2]"/>
+    <StoryCard :story="props.stories[2]" :onMobile="false"/>
   </div>
 </template>
